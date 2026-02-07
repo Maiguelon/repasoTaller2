@@ -1,0 +1,40 @@
+[
+  {
+    "$type": "maquinaria",
+    "Id": 1,
+    "NumeroSerie": "MAQ-999001",
+    "CostoBase": 5000,
+    "PesoToneladas": 12.5
+  },
+  {
+    "$type": "maquinaria",
+    "Id": 2,
+    "NumeroSerie": "MAQ-888002",
+    "CostoBase": 7500,
+    "PesoToneladas": 20.0
+  },
+  {
+    "$type": "herramienta",
+    "Id": 3,
+    "NumeroSerie": "HER-111003",
+    "CostoBase": 200,
+    "Tipo": 1, 
+    "AniosUso": 2
+  },
+  {
+    "$type": "herramienta",
+    "Id": 4,
+    "NumeroSerie": "HER-222004",
+    "CostoBase": 350,
+    "Tipo": 1,
+    "AniosUso": 6
+  },
+  {
+    "$type": "herramienta",
+    "Id": 5,
+    "NumeroSerie": "HER-333005",
+    "CostoBase": 100,
+    "Tipo": 2,
+    "AniosUso": 1
+  }
+]

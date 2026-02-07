@@ -18,6 +18,7 @@ El sistema debe respetar la arquitectura de **Separación de Responsabilidades**
 
 ### A. Jerarquía de Equipos (Herencia y Polimorfismo)
 Obra: Id (int), Nombre (string), Direccion (string), FechaInicio (DateTime), Equipos (List<Equipo>).
+
 Equipo (Base): Id (int), Nombre (string), NumeroSerie (string, validado a 10 chars), CostoBase (double).
 
 Todo equipo tiene un `Nombre`, un `NumeroDeSerie` y un `CostoBase`. Sin embargo, el costo final de alquiler diario varía según el tipo:
