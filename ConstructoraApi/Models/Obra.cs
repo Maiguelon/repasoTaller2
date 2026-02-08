@@ -2,20 +2,18 @@ namespace constructora;
 
 public class Obra
 {
-    private int id;
-    private string nombre;
-    private string direccion;
-    private DateTime fechaInicio;
-    private List<Equipo> equipamiento;
+    // 1. Auto-Properties: Más limpio, menos código, menos errores.
+    public int Id { get; set; }
+    public string Nombre { get; set; }
+    public string Direccion { get; set; }
+    public DateTime FechaInicio { get; set; }
+    
+    // 2. INICIALIZACIÓN OBLIGATORIA:
+    // Al poner "= new List<Equipo>();" aquí, garantizas que JAMÁS sea null,
+    // incluso si el JSON no trae nada.
+    public List<Equipo> Equipamiento { get; set; } = new List<Equipo>();
 
-    public Obra(List<Equipo> equipamiento)
-    {
-        this.equipamiento = new List<Equipo>();
-    }
-
-    public int Id { get => id; set => id = value; }
-    public string Nombre { get => nombre; set => nombre = value; }
-    public string Direccion { get => direccion; set => direccion = value; }
-    public DateTime FechaInicio { get => fechaInicio; set => fechaInicio = value; }
-    public List<Equipo> Equipamiento { get => equipamiento; set => equipamiento = value; }
+    // 3. Constructor vacío:
+    // Necesario para que el deserializador pueda crear la instancia sin parámetros.
+    public Obra() { }
 }

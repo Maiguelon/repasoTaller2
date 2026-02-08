@@ -1,0 +1,25 @@
+[
+  {
+    "Id": 1,
+    "Nombre": "Torre Nueva",
+    "Direccion": "Av. Siempreviva 742",
+    "FechaInicio": "2025-06-01T00:00:00",
+    "Equipamiento": [
+      {
+        "$type": "herramienta",
+        "Tipo": 1,
+        "AniosUso": 2,
+        "Id": 3,
+        "NumeroSerie": "HER-111003",
+        "CostoBase": 200
+      }
+    ]
+  },
+  {
+    "Id": 2,
+    "Nombre": "Babel",
+    "Direccion": "Av. Colon 615",
+    "FechaInicio": "2027-08-10T00:00:00",
+    "Equipamiento": []
+  }
+]
